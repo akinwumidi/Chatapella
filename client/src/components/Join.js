@@ -3,7 +3,7 @@ import React from 'react'
 const Join = ()=>{
     return(
         <div>
-            <h1>Join component working</h1>
+            <h1>Signup to use Application</h1>
         </div>
     )
 }

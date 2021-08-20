@@ -1,13 +1,14 @@
 # Chatapella
 Simple Chat application using React js, Node js, Express and Socket.io
 
-##Client Dependencies
-react-router 
-react-router-dom
+## Client Dependencies
+<br>
+react-router <br>
+react-router-dom<br>
 socket.io-client 
-react-scroll-to-bottom 
-react-emoji 
-query-string
+react-scroll-to-bottom <br>
+react-emoji <br>
+query-string<br>
 <hr>
 run
 
@@ -17,11 +18,12 @@ npm install --save react-router socket.io-client react-scroll-to-bottom react-em
 npm install react-router-dom
 ```
 
-##Server dependencies
- cors 
- nodemon 
- express 
- socket.io
+## Server dependencies
+<br>
+ cors<br> 
+ nodemon <br>
+ express <br>
+ socket.io<br>
 <hr>
 run
 

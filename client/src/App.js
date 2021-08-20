@@ -8,10 +8,9 @@ import Join from "./components/Join"
 const App =()=>{
   return(
       <div>
-          <h1>React up and running </h1>
         <Router>
-          <Route path="/" exact component={Chat} />
-          <Route path="/chat" component={Join} />
+          <Route path="/" exact component={Join} />
+          <Route path="/chat" component={Chat} />
       </Router>
       </div>
       
