@@ -1,24 +1,25 @@
 const express = require("express");
-const socketio = require("socket.io");
-const http = require("http");
+const cors = require("cors");
+const axios = require("axios")
 
-const PORT = process.env.PORT || 5000;
-// const PORT = 5000;
-
-const router = require('./router');
-const { Socket } = require("dgram");
 const app = express();
-const server = http.createServer(app);
-const io = socketio(server);
-io.on('connection',(socket)=>{
-    console.log(`we have a new connection`)
-    Socket.on('disconnect',()=>{
-        console.log(`User has logged off!!`)
-    })
-})
+app.use(express.json());
+app.use(cors({ origin: true }));
 
-app.use(router)
+app.post("/authenticate", async (req, res) => {
+    const { username } = req.body;
 
-server.listen(PORT, ()=> {
-  console.log(`The server has started on ${PORT}`);
+    try {
+        const r = await axios.put(
+            'https://api.chatengine.io/users/',
+            { username: username, secret: username, first_name: username },
+            { headers: { "PRIVATE-KEY": "b3d9ce9e-8380-4412-8e0e-24aa04632083", } }
+        )
+        return res.status(r.status).json(r.data);
+    } catch (e) {
+        return res.status(e.response.status).json(e.response.data);
+    }
+
 });
+
+app.listen(3001);
