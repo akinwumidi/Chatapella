@@ -1,0 +1,20 @@
+.navbar {
+  padding: 5px 20px;
+  .share-btn {
+    font-size: 1.6rem;
+  }
+  .nav-actions {
+    cursor: pointer;
+  }
+}
+.nav-brand {
+  font-weight: 700;
+  font-size: 1.9rem;
+  span {
+    color: var(--black-color);
+    font-weight: 100;
+    font-family: "Monoton", cursive;
+    margin: 0 !important;
+    display: inline-block;
+  }
+}

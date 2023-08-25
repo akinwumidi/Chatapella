@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+
+:root {
+  --main-color: rgb(0, 128, 0, 1);
+  --white-color: #fff;
+  --black-color: #000;
+  --green-gradient: linear-gradient(
+    to right,
+    rgba(82, 194, 52, 0.3),
+    rgba(71, 173, 71, 0.3)
+  );
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+
+.btn-cmain {
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding: 3px 15px;
+  // background: var(--green-gradient);
+  background: linear-gradient(to right, #00ffa3, #dc1fff);
+  position: relative;
+  z-index: 1;
+}
+.btn-cmain::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--white-color);
+  border-radius: 4px;
+  z-index: -1;
+}
+.btn-cmain:after {
+  content: attr(data);
+  color: transparent;
+  background: linear-gradient(to left, #00ffa3, #dc1fff);
+  -webkit-background-clip: text;
+}
