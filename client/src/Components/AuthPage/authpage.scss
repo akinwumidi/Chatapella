@@ -1,21 +1,17 @@
 .background {
-  width: 100vw;
-  height: 100vh;
   background: linear-gradient(
     75deg,
     rgb(20, 23, 33) 0%,
     rgb(20, 23, 33) 50%,
     rgba(20, 23, 33, 0.8) 100%
   );
-  /* Vertical center */
-  display: table-cell;
-  vertical-align: middle;
 }
 
 .form-card {
-  width: 50%;
+  width: 18.7rem;
   max-width: 350px;
-  padding: 0% 25% 0% 25%;
+  padding: 20px 15px;
+  min-height: 400px;
 }
 
 .form-title {

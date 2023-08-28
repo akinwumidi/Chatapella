@@ -1,9 +1,13 @@
 import React from 'react'
 import "./footer.scss"
+import { Developercontact } from '..'
 
 const Footer = () => {
     return (
-        <div>Footer</div>
+        <div className='footer'>
+            <p>&copy; 2021 Chatapella</p>
+            <Developercontact />
+        </div>
     )
 }
 

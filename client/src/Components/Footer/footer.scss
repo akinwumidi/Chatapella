@@ -1,0 +1,12 @@
+.footer {
+  padding: 5px 20px;
+  display: flex;
+  align-items: center !important;
+  justify-content: space-evenly;
+
+  p {
+    font-size: 1.1rem;
+    border: 1px solid black;
+    align-self: center;
+  }
+}

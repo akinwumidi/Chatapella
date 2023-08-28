@@ -12,7 +12,7 @@ function App() {
     return (
       <>
         <NavBar />
-        <AuthPage onAuth={(user) => setUser(user)} />;
+        <AuthPage onAuth={(user) => setUser(user)} style={{ height: "400px" }} />
         <Footer />
       </>
     )
