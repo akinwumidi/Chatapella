@@ -3,3 +3,6 @@ Content-Type: application/json
 
 {"username":"Akinwumidi"}  
 
+# server hosted on www.render.com: https://chatapella.onrender.com/
+#  you can choose to spin server locally, by running "npm start" in /server working directory 
+# replace the above url with http://localhost:3001/authenticate

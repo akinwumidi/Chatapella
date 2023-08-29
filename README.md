@@ -1,6 +1,10 @@
 # Chatapella
 Simple Chat application using React js, Node js, Express and Socket.io
 
+##Server Info
+server hosted on render.com : https://chatapella.onrender.com/ <br/>
+You can choose to spin and test the app locally
+
 ## Client Dependencies
 <br>
 react-router <br>
