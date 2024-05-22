@@ -3,7 +3,7 @@ import { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.scss";
 
-import { AuthPage, ChatsPage, NavBar, Footer } from "./Components";
+import { NavBar, Footer } from "./Components";
 
 function App() {
   const [user, setUser] = useState(undefined);
@@ -12,7 +12,6 @@ function App() {
     return (
       <>
         <NavBar />
-        <AuthPage onAuth={(user) => setUser(user)} style={{ height: "400px" }} />
         <Footer />
       </>
     )
@@ -20,7 +19,6 @@ function App() {
     return (
       <>
         <NavBar />
-        <ChatsPage user={user} />;
         <Footer />
       </>
 
